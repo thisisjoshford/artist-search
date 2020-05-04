@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 const Search = ({ artistName, onChange, onSubmit, }) => (
   
   <form onSubmit={onSubmit}>
-      
+
     <label>
+
       <input type="text"
         name="artistSearch"
         placeholder="enter Artist Name"
@@ -13,15 +14,17 @@ const Search = ({ artistName, onChange, onSubmit, }) => (
         onChange={onChange}
       >
       </input>
+
     </label>
+
     <button type="submit">GO!</button>
+
   </form>
 
 );
 
 Search.propTypes = {
   artistName: PropTypes.string.isRequired,
-  textBody: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import withList from '../withList';
 
 const Artist = ({ name }) => (
@@ -7,9 +8,13 @@ const Artist = ({ name }) => (
   </>
 );
 
-const ArtistResults = withList(Artist, 'results'); 
+const SearchResults = withList(Artist, 'results'); 
 
-export default ArtistResults;
+Artist.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
+export default SearchResults;
 
 // import React from 'react';
 // import PropTypes from 'prop-types';

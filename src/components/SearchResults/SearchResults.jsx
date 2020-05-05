@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import withList from '../withList';
 
 const Artist = ({ name }) => (
-  <>
-    <p>{name}</p>
-  </>
+  <p>{name}</p>
 );
 
 const SearchResults = withList(Artist, 'results'); 

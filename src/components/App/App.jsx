@@ -14,7 +14,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/:artistName" component={ResultsList}/>
-          <Route exact path="/artist/:artistID" component={Albums} />
+          <Route exact path="/:artistName/:artistID" component={Albums} />
           <Route exact path="/" component={Main} />
         </Switch>
       </Router>

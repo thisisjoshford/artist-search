@@ -6,7 +6,7 @@ import { getArtistDetail } from '../../services/apiFetches';
 const ArtistViewControl = () => {
 
   const [artistDetail, setArtistDetail] = useState([]);
-  const { artistID } = useParams();
+  const { artistName, artistID } = useParams();
 
   useEffect(() => {
     getArtistDetail(artistID)
@@ -15,7 +15,7 @@ const ArtistViewControl = () => {
 
   return (
     <>
-      <ArtistDetail results={artistDetail}/>
+      <ArtistDetail artistName={artistName} artistDetail={artistDetail}/>
     </>
   );
 };

@@ -6,7 +6,6 @@ import { getArtists } from '../../services/apiFetches';
 const ResultsList = () => {
 
   const [artistResults, setArtistResults] = useState([]);
-
   const { artistName } = useParams();
   
   useEffect(() => {

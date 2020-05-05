@@ -12,7 +12,6 @@ const Albums = () => {
     getArtistDetail(artistID)
       .then(res => setArtistDetail(res));
   });
-  console.log(artistDetail);
 
 };
 

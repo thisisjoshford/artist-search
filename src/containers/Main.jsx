@@ -1,22 +1,18 @@
 import React, { useState } from 'react';
 import Search from '../components/App/Search/Search';
-import { getArtists } from '../services/apiFetches';
+import { useHistory } from 'react-router-dom';
 
 export default function Main() {
 
   const [artistName, setArtistName] = useState('');
-  const [artistResults, setArtistResults] = useState([]);
+  const history = useHistory();
 
   const handleChange = ({ target }) => setArtistName(target.value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getArtists(artistName)
-      .then(artists => setArtistResults(artists));
+    history.push(`/${artistName}`);
   };
-  console.log('Artist Name', artistName);
-  console.log('Search Results', artistResults);
-
 
   return (
     <>

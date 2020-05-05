@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Search = ({ artistName, onChange, onSubmit, }) => (
+const Search = ({ artistName, onChange, onSubmit }) => (
   
   <form onSubmit={onSubmit}>
 
@@ -17,7 +17,7 @@ const Search = ({ artistName, onChange, onSubmit, }) => (
 
     </label>
 
-    <button type="submit">GO!</button>
+    <button>GO!</button>
 
   </form>
 

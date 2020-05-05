@@ -4,7 +4,7 @@ import React from 'react';
 const Artist = ({ name }) => (
 
   <>
-    <p>{name} </p>
+    <p>{name}</p>
   </>
 
 );

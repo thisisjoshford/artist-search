@@ -5,7 +5,8 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 import Main from '../../containers/Main';
-import ResultsList from '../../components/ResultsList/ResultsList';
+import ResultsList from '../../containers/ResultsListControls/ResultsListControls';
+import ArtistResults from '../ArtistResults/ArtistResults';
 import Albums from '../Albums/Albums';
 
 export default function App() {

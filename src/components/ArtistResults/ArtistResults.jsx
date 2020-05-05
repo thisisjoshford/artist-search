@@ -1,5 +1,11 @@
-import Artist from '../Artist/Artist';
+import React from 'react';
 import withList from '../withList';
+
+const Artist = ({ name }) => (
+  <>
+    <p>{name}</p>
+  </>
+);
 
 const ArtistResults = withList(Artist, 'results'); 
 

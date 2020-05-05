@@ -3,17 +3,14 @@ export const getArtists = (artist) => {
     .then(res => res.json())
     .then(json => json.artists.map(artist => ({
       id: artist.id,
-      name: artist.name
+      name: artist.name,
+      disambiguation: artist.disambiguation
     })));
 };
 
 export const getArtistDetail = (artistID) => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistID}&fmt=json`)
     .then(res => res.json());
-    // .then(json => json.artists.map(artist => ({
-    //   id: artist.id,
-    //   name: artist.name
-    // })));
 };
 
 

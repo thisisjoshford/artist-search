@@ -9,6 +9,7 @@ export default function Main() {
 
   const handleChange = ({ target }) => setArtistName(target.value);
 
+  //redirect on submit to get those sweet params to share with your grandma :)
   const handleSubmit = (e) => {
     e.preventDefault();
     history.push(`/${artistName}`);

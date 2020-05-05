@@ -7,16 +7,16 @@ const ResultsList = () => {
 
   const [artistResults, setArtistResults] = useState([]);
 
-  const artistSearch = useParams();
+  const { artistName } = useParams();
   
   useEffect(() => {
-    getArtists(artistSearch.artistName)
+    getArtists(artistName)
       .then(res => setArtistResults(res));
   }, []);
 
   return (
     <>
-      <h3>Search Results for: {artistSearch.artistName} </h3>
+      <h3>Search Results for: {artistName} </h3>
       <ArtistResults results={artistResults}/>
     </>
   );

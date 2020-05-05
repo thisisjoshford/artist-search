@@ -15,3 +15,5 @@ export const getArtistDetail = (artistID) => {
     //   name: artist.name
     // })));
 };
+
+

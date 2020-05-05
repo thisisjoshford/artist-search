@@ -3,10 +3,10 @@ import withList from '../withList';
 
 const ArtistCard = ({ name }) => (
   <>
-    <p>{name} </p>
+    <p>{name}</p>
   </>
 );
 
-const ArtistDetail = withList(ArtistCard, 'results'); 
+const ArtistDetail = withList(ArtistCard, 'artistDetail'); 
 
 export default ArtistDetail;

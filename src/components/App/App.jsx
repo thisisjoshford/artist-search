@@ -5,8 +5,8 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 import Main from '../../containers/Main';
-import ResultsList from '../../containers/ResultsListControls/ResultsListControls';
-import Albums from '../../containers/ArtistViewControl/ArtistViewControl';
+import ResultsList from '../../containers/SearchResultControls/SearchResultControls';
+import Albums from '../../containers/ArtistDetailControls/ArtistDetailControls';
 
 export default function App() {
   return (

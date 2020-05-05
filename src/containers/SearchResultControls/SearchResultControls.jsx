@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ArtistResults from '../../components/ArtistResults/ArtistResults';
+import ArtistResults from '../../components/SearchResults/SearchResults';
 import { useParams } from 'react-router-dom';
 import { getArtists } from '../../services/apiFetches';
 

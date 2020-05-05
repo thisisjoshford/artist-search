@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ArtistView from '../../components/ArtistResults/ArtistResults';
+import ArtistDetail from '../../components/ArtistDetail/ArtistDetail';
 import { useParams } from 'react-router-dom';
-import { getArtists } from '../../services/apiFetches';
+import { getArtistDetail } from '../../services/apiFetches';
 
 const ArtistViewControl = () => {
 
@@ -9,14 +9,13 @@ const ArtistViewControl = () => {
   const artistID = useParams();
 
   useEffect(() => {
-    getArtistDetail(artistID.id)
+    getArtistDetail(artistID.artistID)
       .then(res => setArtistDetail(res));
   }, []);
 
   return (
     <>
-      <h3>{artistDetail.artistName} </h3>
-      <ArtistResults results={artistResults}/>
+      <ArtistDetail results={artistDetail}/>
     </>
   );
 };

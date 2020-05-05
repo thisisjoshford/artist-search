@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 import Main from '../../containers/Main';
 import ResultsList from '../../containers/ResultsListControls/ResultsListControls';
-import ArtistResults from '../ArtistResults/ArtistResults';
 import Albums from '../Albums/Albums';
 
 export default function App() {
@@ -14,7 +13,7 @@ export default function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/:artistName" component={ResultsList} />
+          <Route exact path="/:artistName" component={ResultsList}/>
           <Route exact path="/artist/:artistID" component={Albums} />
           <Route exact path="/" component={Main} />
         </Switch>

@@ -16,7 +16,7 @@ const ResultsList = () => {
 
   return (
     <>
-      <h1>{artistSearch.artistName} Results</h1>
+      <h3>Search Results for: {artistSearch.artistName} </h3>
       <ArtistResults results={artistResults}/>
     </>
   );

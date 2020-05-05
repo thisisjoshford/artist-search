@@ -4,9 +4,8 @@ import { useParams } from 'react-router-dom';
 import { getReleaseInfo } from '../../services/apiFetches';
 
 const ReleaseDetailControls = () => {
-
   const [releaseDetail, setReleaseDetail] = useState([]);
-  const { artistName, releaseID } = useParams();
+  const { artistName, albumName, releaseID } = useParams();
 
   useEffect(() => {
     getReleaseInfo(releaseID)
@@ -14,10 +13,14 @@ const ReleaseDetailControls = () => {
   }, []);
 
   console.log(releaseDetail);
+  console.log(releaseID);
 
   return (
     <>
-      <ReleaseDetail artistName={artistName} releaseDetail={releaseDetail}/>
+      <ReleaseDetail 
+        artistName={artistName} 
+        albumName={albumName} 
+        releaseDetail={releaseDetail}/>
     </>
   );
 };

@@ -11,22 +11,21 @@ Search for artists by name.
 
 ## Components
 [] - Search
-   * display a list of matching artists
-   * Allow paging through artists
-   * As you type into the input box update a `searchTerm` query string.
-   * Navigating directly to a URL with a `searchTerm` query string pre-fills
+   * [] - display a list of matching artists
+   * [] - artist pagination 
+   * [] - As you type into the input box update a `searchTerm` query string.
+   * [] - Navigating directly to a URL with a `searchTerm` query string pre-fills
     the search form.
 
 [] - All releases by an artist
-  * Use `http://musicbrainz.org/ws/2/release?artist=<ARTIST_ID>&fmt=json`
-  * Get cover art from `http://coverartarchive.org/release/<RELEASE_ID>/front`
-  * Only some releases have cover art. Display a placeholder if no cover art.
-  * Allow paging through releases
-  * Bonus: Make the page part of a query string
-[] - Create a release view which displays a list of recordings for a release
-  * Use `http://musicbrainz.org/ws/2/recording?release=<RELEASE_ID>&fmt=json`
-[] - Create a song view which displays the lyrics of a song
-  * Use `https://api.lyrics.ovh/v1/<ARTIST>/<TITLE>` to get lyrics
+  * [] - Get cover art from `http://coverartarchive.org/release/<RELEASE_ID>/front`
+  * [] - Display a placeholder if no cover art.
+  * [] - releases pagination
+  * [] - Make the page part of a query string (STRETCH)
+[] - Release view which displays a list of recordings for a release
+  * [] - Use `http://musicbrainz.org/ws/2/recording?release=<RELEASE_ID>&fmt=json`
+[] - Song view which displays the lyrics of a song
+  * [] - Use `https://api.lyrics.ovh/v1/<ARTIST>/<TITLE>` to get lyrics
 
 ## Testing
 

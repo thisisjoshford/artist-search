@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<form>
+  <label>
+    <input
+      name="artistSearch"
+      placeholder="enter Artist Name"
+      type="text"
+    />
+  </label>
+  <button>
+    GO!
+  </button>
+</form>
+`;

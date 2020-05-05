@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Main from '../../containers/Main';
 import ResultsList from '../../containers/SearchResultControls/SearchResultControls';
-import Albums from '../../containers/ArtistDetailControls/ArtistDetailControls';
+import ArtistDetail from '../../containers/ArtistDetailControls/ArtistDetailControls';
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/:artistName" component={ResultsList}/>
-          <Route exact path="/:artistName/:artistID" component={Albums} />
+          <Route exact path="/:artistName/:artistID" component={ArtistDetail} />
           <Route exact path="/" component={Main} />
         </Switch>
       </Router>

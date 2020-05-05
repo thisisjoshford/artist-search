@@ -1,0 +1,7 @@
+.Artist{
+  height: 100%;
+
+  img {
+    width: 10rem;
+  }
+}

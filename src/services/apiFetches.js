@@ -1,3 +1,4 @@
+import placeholder from '../assets/placeholder.jpg';
 
 export const getArtists = (artist) => {
   return fetch(`http://musicbrainz.org/ws/2/artist?query=${artist}&fmt=json&limit=25'`)
@@ -18,6 +19,6 @@ export const getArtistDetail = (artistID) => {
         title: release.title,
         cover_art: release['cover-art-archive'].front 
           ? `http://coverartarchive.org/release/${release.id}/front` 
-          : 'placeholder.jpg'
+          : placeholder
       })));
 };

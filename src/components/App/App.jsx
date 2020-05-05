@@ -7,6 +7,7 @@ import {
 import Main from '../../containers/Main';
 import ResultsList from '../../containers/SearchResultControls/SearchResultControls';
 import ArtistDetail from '../../containers/ArtistDetailControls/ArtistDetailControls';
+import ReleaseDetail from '../../containers/ReleaseDetailControls/ReleaseDetailControls';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Switch>
           <Route exact path="/:artistName" component={ResultsList}/>
           <Route exact path="/:artistName/:artistID" component={ArtistDetail} />
+          <Route exact path="/:artistName/release/:releaseID" component={ReleaseDetail} />
           <Route exact path="/" component={Main} />
         </Switch>
       </Router>

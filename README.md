@@ -11,15 +11,15 @@ Search for artists by name.
 
 ## Components
 [] - Search
-   * [] - display a list of matching artists
+   * [x] - display a list of matching artists
    * [] - artist pagination 
    * [] - As you type into the input box update a `searchTerm` query string.
    * [] - Navigating directly to a URL with a `searchTerm` query string pre-fills
     the search form.
 
 [] - All releases by an artist
-  * [] - Get cover art from `http://coverartarchive.org/release/<RELEASE_ID>/front`
-  * [] - Display a placeholder if no cover art.
+  * [x] - Get cover art from `http://coverartarchive.org/release/<RELEASE_ID>/front`
+  * [x] - Display a placeholder if no cover art.
   * [] - releases pagination
   * [] - Make the page part of a query string (STRETCH)
 [] - Release view which displays a list of recordings for a release

@@ -22,3 +22,16 @@ export const getArtistDetail = (artistID) => {
           : placeholder
       })));
 };
+
+export const getReleaseInfo = (releaseID) => {
+  return fetch(`http://musicbrainz.org/ws/2/recording?release=${releaseID}&fmt=json`)
+    .then(res => res.json())
+    .then(json => 
+      json.recordings.map(song => ({
+        id: song.id,
+        title: song.title,
+        info: song.disambiguation
+      })));
+};
+
+

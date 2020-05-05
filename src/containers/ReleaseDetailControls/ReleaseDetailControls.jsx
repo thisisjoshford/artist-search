@@ -1,0 +1,25 @@
+import React, { useState, useEffect } from 'react';
+import ReleaseDetail from '../../components/ReleaseDetail/ReleaseDetail';
+import { useParams } from 'react-router-dom';
+import { getReleaseInfo } from '../../services/apiFetches';
+
+const ReleaseDetailControls = () => {
+
+  const [releaseDetail, setReleaseDetail] = useState([]);
+  const { artistName, releaseID } = useParams();
+
+  useEffect(() => {
+    getReleaseInfo(releaseID)
+      .then(res => setReleaseDetail(res));
+  }, []);
+
+  console.log(releaseDetail);
+
+  return (
+    <>
+      <ReleaseDetail artistName={artistName} releaseDetail={releaseDetail}/>
+    </>
+  );
+};
+
+export default ReleaseDetailControls;

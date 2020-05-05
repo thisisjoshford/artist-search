@@ -1,13 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './ArtistDetail.css';
+
 
 const ArtistDetail = ({ artistName, artistDetail }) => {
   const artistReleases = artistDetail.map((release) => (
-    <div key={release.id} className={styles.Artist}> 
-      <img src={release.cover_art} />
-      <h3>{release.title}</h3>
-    </div>
+    <Link key={release.id} to={`/${artistName}/release/${release.id}/`} >
+      <div key={release.id} className={styles.Artist}> 
+        <img src={release.cover_art} />
+        <h3>{release.title}</h3>
+      </div>
+    </Link>
+ 
   ));
 
   return (

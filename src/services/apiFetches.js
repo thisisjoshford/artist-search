@@ -10,7 +10,13 @@ export const getArtists = (artist) => {
 
 export const getArtistDetail = (artistID) => {
   return fetch(`http://musicbrainz.org/ws/2/release?artist=${artistID}&fmt=json`)
-    .then(res => res.json());
+    .then(res => res.json())
+    .then(json => 
+      json.releases.map(release => ({
+        id: release.id,
+        title: release.title,
+        cover_art: release['cover-art-archive'].front
+      })));
 };
 
 

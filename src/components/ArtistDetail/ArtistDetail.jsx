@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import withList from '../withList';
 
-const ArtistCard = ({ name }) => (
-  <p>{name}</p>
-);
+const ArtistDetail = ({ artistName, artistDetail }) => {
+  
+  
+  return (
+    <p>Details for: {artistName}</p>
+  );
+};
 
-const ArtistDetail = withList(ArtistCard, 'artistDetail'); 
-
-ArtistCard.propTypes = {
-  name: PropTypes.string.isRequired,
+ArtistDetail.propTypes = {
+  artistName: PropTypes.string.isRequired,
 };
 
 export default ArtistDetail;

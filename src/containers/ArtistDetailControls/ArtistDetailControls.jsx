@@ -13,6 +13,8 @@ const ArtistViewControl = () => {
       .then(res => setArtistDetail(res));
   }, []);
 
+  console.log(artistDetail);
+
   return (
     <>
       <ArtistDetail artistName={artistName} artistDetail={artistDetail}/>

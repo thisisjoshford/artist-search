@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import SongLyrics from '../5_SongLyricsControls';
+import SongLyrics from '../../components/5_SongLyrics/SongLyrics';
 import { useParams } from 'react-router-dom';
 import { getLyrics } from '../../services/apiFetches';
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SongLyrics = ({ songName, songLyrics }) => (
+const SongLyrics = ({ artistName, songName, songLyrics }) => (
   <>
-    <h3>{songName}</h3>
+    <h3>Lyrics for {artistName} {songName}</h3>
     <p>{songLyrics} </p>
   </>
 );
 
 SongLyrics.propTypes = {
+  artistName: PropTypes.string.isRequired,
   songName: PropTypes.string.isRequired,
   songLyrics: PropTypes.array.isRequired
 };

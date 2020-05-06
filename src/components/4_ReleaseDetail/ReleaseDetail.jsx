@@ -7,7 +7,7 @@ const ReleaseDetail = ({ artistName, albumName, releaseDetail }) => {
   const trackList = releaseDetail.map((track) => (
     <Link 
       key={track.id} 
-      to={`/${artistName}/lyrics/${track.title}`}
+      to={`/lyrics/${artistName}/${track.title}`}
     >
       <h3>{track.title}</h3>
     </Link>

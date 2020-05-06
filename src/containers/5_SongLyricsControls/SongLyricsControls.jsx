@@ -12,8 +12,6 @@ const SongLyricsControls = () => {
       .then(res => setSongLyrics(res));
   }, []);
 
-  console.log(songLyrics);
-
   return (
     <>
       <SongLyrics 

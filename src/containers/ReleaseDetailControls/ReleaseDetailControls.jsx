@@ -12,9 +12,6 @@ const ReleaseDetailControls = () => {
       .then(res => setReleaseDetail(res));
   }, []);
 
-  console.log(releaseDetail);
-  console.log(releaseID);
-
   return (
     <>
       <ReleaseDetail 

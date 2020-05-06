@@ -22,8 +22,8 @@ Search for artists by name.
   * [x] - Display a placeholder if no cover art.
   * [] - releases pagination
   * [] - Make the page part of a query string (STRETCH)
-[] - Release view which displays a list of recordings for a release
-  * [] - Use `http://musicbrainz.org/ws/2/recording?release=<RELEASE_ID>&fmt=json`
+[x] - Release view which displays a list of recordings for a release
+  * [x] - Use `http://musicbrainz.org/ws/2/recording?release=<RELEASE_ID>&fmt=json`
 [] - Song view which displays the lyrics of a song
   * [] - Use `https://api.lyrics.ovh/v1/<ARTIST>/<TITLE>` to get lyrics
 

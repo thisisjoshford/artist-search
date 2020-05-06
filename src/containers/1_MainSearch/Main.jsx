@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Search from '../components/Search/Search.jsx';
+import Search from '../components/1_MainSearch/Search.jsx';
 import { useHistory } from 'react-router-dom';
 
 export default function Main() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ReleaseDetail from '../../components/ReleaseDetail/ReleaseDetail';
+import ReleaseDetail from '../../components/4_ReleaseDetail/ReleaseDetail';
 import { useParams } from 'react-router-dom';
 import { getReleaseInfo } from '../../services/apiFetches';
 

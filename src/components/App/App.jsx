@@ -4,10 +4,10 @@ import {
   Switch,
   BrowserRouter as Router,
 } from 'react-router-dom';
-import Main from '../../containers/Main';
-import SearchResults from '../../containers/SearchResultControls/SearchResultControls';
-import ArtistDetail from '../../containers/ArtistDetailControls/ArtistDetailControls';
-import ReleaseDetail from '../../containers/ReleaseDetailControls/ReleaseDetailControls';
+import Main from '../../containers/1_MainSearch';
+import SearchResults from '../../containers/2_SearchResultControls/SearchResultControls';
+import ArtistDetail from '../../containers/3_ArtistDetailControls/ArtistDetailControls';
+import ReleaseDetail from '../../containers/4_ReleaseDetailControls/ReleaseDetailControls';
 import SongLyrics from '../../containers/SongLyrics/SongLyrics';
 
 export default function App() {

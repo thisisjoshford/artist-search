@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-
+import SongLyrics from '../5_SongLyricsControls';
 import { useParams } from 'react-router-dom';
 import { getLyrics } from '../../services/apiFetches';
 
 const SongLyricsControls = () => {
-
   const [songLyrics, setSongLyrics] = useState([]);
   const { artistName, songName } = useParams();
 
@@ -17,7 +16,10 @@ const SongLyricsControls = () => {
 
   return (
     <>
-      <SongLyrics artistName={artistName} songLyrics={songLyrics}/>
+      <SongLyrics 
+        artistName={artistName}
+        songName={songName} 
+        songLyrics={songLyrics}/>
     </>
   );
 };

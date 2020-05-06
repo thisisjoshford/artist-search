@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 
 const ReleaseDetail = ({ artistName, albumName, releaseDetail }) => {
   const trackList = releaseDetail.map((track) => (
-    <Link key={track.id} to={`${artistName}/lyrics/${track.title}`}>
+    <Link 
+      key={track.id} 
+      to={`/${artistName}/lyrics/${track.title}`}
+    >
       <h3>{track.title}</h3>
     </Link>
   ));

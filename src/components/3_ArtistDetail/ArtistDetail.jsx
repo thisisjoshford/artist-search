@@ -14,7 +14,6 @@ const ArtistDetail = ({ artistName, artistDetail }) => {
         <img src={release.cover_art} />
         <h3>{release.title}</h3>
       </div>
-      
     </Link>
   ));
 

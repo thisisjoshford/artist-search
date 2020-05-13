@@ -4,7 +4,12 @@ import Search from './Search';
 
 describe('Search component', () => {
   it('renders Search', () => {
-    const wrapper = shallow(<Search />);
+    const wrapper = shallow(
+      <Search
+        artistName='Tool'
+        onSubmit={() => {}}
+        onChange={() => {}}
+      />);
     expect(wrapper).toMatchSnapshot();
   });
 });

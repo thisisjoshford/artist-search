@@ -1,12 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search component renders Search 1`] = `
-<form>
+<form
+  onSubmit={[Function]}
+>
   <label>
     <input
       name="artistSearch"
+      onChange={[Function]}
       placeholder="enter Artist Name"
       type="text"
+      value="Tool"
     />
   </label>
   <button>

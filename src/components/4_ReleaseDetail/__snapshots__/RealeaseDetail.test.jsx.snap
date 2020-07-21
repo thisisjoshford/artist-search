@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<Fragment>
+  <h3>
+    Album1
+     Track List:
+  </h3>
+  <Link
+    key="1234"
+    to="/lyrics/Tool/track1"
+  >
+    <h3>
+      track1
+    </h3>
+  </Link>
+  <Link
+    key="12345"
+    to="/lyrics/Tool/track2"
+  >
+    <h3>
+      track2
+    </h3>
+  </Link>
+</Fragment>
+`;

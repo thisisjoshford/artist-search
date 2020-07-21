@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<ul>
+  <li
+    key="1234"
+  >
+    <Artist
+      id="1234"
+      info="Real Tool Band"
+      name="Tool"
+    />
+  </li>
+  <li
+    key="12345"
+  >
+    <Artist
+      id="12345"
+      info="not so real Tool band"
+      name="Tool"
+    />
+  </li>
+</ul>
+`;

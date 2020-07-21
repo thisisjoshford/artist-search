@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<section>
+  <h3>
+    Lyrics for 
+    Song1
+     by 
+    Tool
+  </h3>
+  <pre />
+</section>
+`;

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+<Fragment>
+  <h3>
+    Releases for: 
+    Tool
+  </h3>
+  <Link
+    key="1234"
+    to="/Tool/album 1/1234/"
+  >
+    <div
+      className="Artist"
+      key="1234"
+    >
+      <img
+        src="http://coverarturl.jpg"
+      />
+      <h3>
+        album 1
+      </h3>
+    </div>
+  </Link>
+  <Link
+    key="12345"
+    to="/Tool/album 2/12345/"
+  >
+    <div
+      className="Artist"
+      key="12345"
+    >
+      <img
+        src="http://coverarturl.jpg"
+      />
+      <h3>
+        album 2
+      </h3>
+    </div>
+  </Link>
+</Fragment>
+`;
